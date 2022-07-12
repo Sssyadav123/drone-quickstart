@@ -4,9 +4,9 @@ type: docker
 name: default
 
 # remove this section if your CPU is amd64
-platform:
-  os: linux
-  arch: arm64
+#platform:
+ # os: linux
+ # arch: arm64
 
 steps:
 - name: hello
