@@ -19,16 +19,12 @@
 #   - main
 
 kind: pipeline
+type: docker
+name: default
 
 steps:
 - name: test
   image: golang
   commands:
-  - go test
   - go build
-
-- name: publish
-  image: plugins/docker
-  settings:
-    repo: octocat/hello-world
-    tags: [ latest, 1.0, 1 ]
+  - go test
