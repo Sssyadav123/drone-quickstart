@@ -1,10 +1,19 @@
+---
 kind: pipeline
 type: docker
 name: default
 
+# remove this section if your CPU is amd64
+platform:
+  os: linux
+  arch: arm64
+
 steps:
-- name: test
-  image: golang
+- name: hello
+  image: busybox
   commands:
-  - go build
-  - go test
+  - echo hello world
+
+trigger:
+  branch:
+  - main
