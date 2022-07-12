@@ -1,20 +1,30 @@
----
+ ---
+# kind: pipeline
+# type: docker
+# name: default
+
+# # remove this section if your CPU is amd64
+# #platform:
+#  # os: linux
+#  # arch: arm64
+
+# steps:
+# - name: hello
+#   image: busybox
+#   commands:
+#   - echo This is Demo of Drone ci
+
+# trigger:
+#   branch:
+#   - main
+  
 kind: pipeline
 type: docker
 name: default
 
-# remove this section if your CPU is amd64
-#platform:
- # os: linux
- # arch: arm64
-
 steps:
-- name: hello
-  image: busybox
+- name: test
+  image: golang
   commands:
-  - echo This is Demo of Drone ci
-
-trigger:
-  branch:
-  - main
-  
+  - go build
+  - go test
