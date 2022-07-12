@@ -20,7 +20,7 @@ services:
       - DRONE_LOGS_DEBUG=true
       - DRONE_LOGS_TEXT=true
     ports:
-      - "8080:81"
+      - "8080:80"
     networks:
       - drone_net
     volumes:
