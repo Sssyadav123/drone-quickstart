@@ -12,7 +12,7 @@ steps:
 - name: hello
   image: busybox
   commands:
-  - echo Hi Welcome
+  - echo This is Demo of Drone ci
 
 trigger:
   branch:
