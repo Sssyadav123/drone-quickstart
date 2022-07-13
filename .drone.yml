@@ -3,9 +3,8 @@ type: docker
 name: default
 
 steps:
-- name: build
-  pull: if-not-exists
-  image: golang:1.12
+- name: docker-image
+  image: ubuntu
   commands:
-  - go build
-  - go test
+  - docker build -t my_first_image .
+  - echo image created
