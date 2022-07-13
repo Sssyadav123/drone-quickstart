@@ -12,7 +12,7 @@ steps:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker build -t first
+  - docker build -t first .
 #   commands:
 #   - ls
 #   - sudo docker build -t my_first_image .
