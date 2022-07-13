@@ -5,9 +5,9 @@ name: default
 
 steps:
 - name: hello
-  image: busybox
+  image: Helloworld
   commands:
-  - echo hello world
+  - echo Prebuild image
 
 trigger:
   branch:
