@@ -5,7 +5,7 @@ name: default
 
 steps:
 - name: hello
-  image: helloworld
+  image: busybox
   commands:
   - echo Prebuild image
 
