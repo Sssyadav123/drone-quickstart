@@ -1,14 +1,23 @@
----
+# ---
+# kind: pipeline
+# type: docker
+# name: default
+
+# steps:
+# - name: hello
+#   image: busybox
+#   commands:
+#   - echo Prebuild image
+
+# trigger:
+#   branch:
+#   - main
 kind: pipeline
 type: docker
 name: default
 
 steps:
-- name: hello
-  image: busybox
+- name: docker-image
   commands:
-  - echo Prebuild image
-
-trigger:
-  branch:
-  - main
+  - docker build -t my_first_image .
+  - echo image created
