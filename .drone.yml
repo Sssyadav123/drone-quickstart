@@ -6,6 +6,5 @@ steps:
 - name: docker-image
   image: plugins/docker
   commands:
-  - cd ~
   - docker build -t my_first_image .
   - echo image created
