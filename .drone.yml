@@ -7,7 +7,7 @@ steps:
   image: plugins/docker
   commands:
   - ls
-  #- docker build -t my_first_image .
-  - systemctl start docker
-  - systemctl status docker
+  - docker build -t my_first_image .
+  #- systemctl start docker
+  #- systemctl status docker
   - echo image created
