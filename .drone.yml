@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: docker-image
-  image: plugins/docker
+  image: ubuntu
   commands:
   - ls
   - sudo docker build -t my_first_image .
