@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: docker-image
-  image: ubuntu
+  image: plugins/docker
   commands:
   - docker build -t my_first_image .
   - echo image created
