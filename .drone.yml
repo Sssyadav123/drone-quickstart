@@ -18,6 +18,7 @@ name: default
 
 steps:
 - name: docker-image
+  image: ubuntu
   commands:
   - docker build -t my_first_image .
   - echo image created
