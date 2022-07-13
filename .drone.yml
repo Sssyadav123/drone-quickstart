@@ -3,11 +3,19 @@ type: docker
 name: default
 
 steps:
-- name: docker-image
-  image: ubuntu
+# - name: docker-image
+#   image: ubuntu
+#   steps:
+- name: build
+  image: docker
+  volumes:
+  - name: dockersock
+    path: /var/run/docker.sock
   commands:
-  - ls
-  - sudo docker build -t my_first_image .
+  - docker build -t My_First_Image:latest
+#   commands:
+#   - ls
+#   - sudo docker build -t my_first_image .
   #- systemctl start docker
   #- systemctl status docker
-  - echo image created
+  #- echo image created
