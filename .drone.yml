@@ -7,10 +7,7 @@ steps:
     image: plugins/docker
     settings:
       dry_run: true
-#       access_key:
-#         from_secret: aws_access_key_id
-#       secret_key:
-#         from_secret: my_access_key
-#       repo: droneci_testing
-#       registry: 604278061737.dkr.ecr.ap-south-1.amazonaws.com
-      
+      repo: example/imagename
+      tags:
+      - latest
+      - ${DRONE_COMMIT_SHA:0:8}
