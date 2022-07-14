@@ -8,7 +8,8 @@ steps:
     settings:
       dry_run: true
       access_key: AKIAYZMOHPKURF2GC636
-      secret_key: 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
+      secret_key:
+        from_secret: my_access_key
       repo: droneci_testing
       registry: 604278061737.dkr.ecr.ap-south-1.amazonaws.com
       tags:
