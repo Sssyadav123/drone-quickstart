@@ -13,5 +13,4 @@ steps:
 #         from_secret: my_access_key
 #       repo: droneci_testing
 #       registry: 604278061737.dkr.ecr.ap-south-1.amazonaws.com
-      tags:
-      - latest
+      
