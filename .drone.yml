@@ -8,11 +8,11 @@ steps:
     settings:
       dry_run: true
       access_key:
-      from_secret: aws_access_key_id
-    secret_key:
-      from_secret: aws_secret_access_key
-    repo: droneci_testing
-    registry: 604278061737.dkr.ecr.ap-south-1.amazonaws.com
-    tags:
-    - latest
-    - ${DRONE_COMMIT_SHA:0:8}
+       from_secret: aws_access_key_id
+     secret_key:
+       from_secret: aws_secret_access_key
+     repo: droneci_testing
+     registry: 604278061737.dkr.ecr.ap-south-1.amazonaws.com
+     tags:
+     - latest
+     - ${DRONE_COMMIT_SHA:0:8}
