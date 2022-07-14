@@ -4,7 +4,7 @@ name: default
 
 steps:
   - name: build
-    image: plugins/ecr
+    image: plugins/docker
     settings:
       dry_run: true
 #       access_key:
