@@ -10,4 +10,3 @@ steps:
       repo: example/imagename
       tags:
       - latest
-      - ${DRONE_COMMIT_SHA:0:8}
